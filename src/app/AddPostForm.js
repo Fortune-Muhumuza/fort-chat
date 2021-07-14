@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 import { useDispatch, useSelector } from 'react-redux'
 
-import { postAdded } from '../store/reducers/postsSlice'
 import { unwrapResult } from '@reduxjs/toolkit'
 import { addNewPost } from '../store/reducers/postsSlice'
 

@@ -14,6 +14,7 @@ import { SinglePostPage } from './app/SinglePostPage'
 import { EditPostForm } from './app/EditPostForm'
 import { UsersList } from './app/UsersList'
 import { UserPage } from './app/UserPage'
+import { NotificationsList } from './app/NotificationsList'
 import { useSelector } from 'react-redux'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Navbar />
       <div className="App" style={{backgroundColor: bgColor, color: textColor}}>
         <Switch>
+        <Route exact path="/notifications" component={NotificationsList} />
           <Route
             exact
             path="/"
